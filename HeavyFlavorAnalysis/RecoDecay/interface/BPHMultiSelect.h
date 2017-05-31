@@ -127,20 +127,20 @@ class BPHMultiSelect: public T {
 
 template<>
 bool BPHMultiSelect<BPHRecoSelect    >::accept(
-                                        const reco::Candidate & cand,
-                                        const BPHRecoBuilder* build ) const;
+                                      const reco::Candidate& cand,
+                                      const BPHRecoBuilder* build ) const;
 template<>
 bool BPHMultiSelect<BPHRecoSelect    >::accept(
-                                        const reco::Candidate & cand ) const;
+                                      const reco::Candidate& cand ) const;
 template<>
 bool BPHMultiSelect<BPHMomentumSelect>::accept(
-                                        const BPHDecayMomentum& cand ) const;
+                                          const BPHDecayMomentum& cand ) const;
 template<>
 bool BPHMultiSelect<BPHVertexSelect  >::accept(
-                                        const BPHDecayVertex  & cand ) const;
+                                        const BPHDecayVertex& cand ) const;
 template<>
 bool BPHMultiSelect<BPHFitSelect     >::accept(
-                                        const BPHKinematicFit & cand ) const;
+                                        const BPHKinematicFit& cand ) const;
 
 #endif
 
